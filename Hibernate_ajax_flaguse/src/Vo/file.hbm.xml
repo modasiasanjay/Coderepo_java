@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0/EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+<class name="Vo.VoFile" table="Countrydata">
+
+	<id name="cid" column="CId">
+	<generator class="increment" />
+	</id>
+	<property name="CountryName">
+	<column name="CountryName"/>
+	</property> 
+	<property name="CountryDescription">
+	<column name="CountryDescription"/>
+	</property>
+	
+</class>
+
+<class name="Vo.StateVo" table="statedata">
+
+	<id name="sid" column="SId">
+	<generator class="increment" />
+	</id>
+	<property name="StateName">
+	<column name="StateName"/>
+	</property> 
+	<property name="StateDescription">
+	<column name="StateDescription"/>
+	</property>
+	
+	<many-to-one class="Vo.VoFile" name="cvo" column="CountryName"></many-to-one>
+
+</class>
+
+
+</hibernate-mapping>
