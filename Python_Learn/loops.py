@@ -17,3 +17,14 @@ else:
 for x in range(6):
     for y in range(5):
         print(f"x: {x}, y: {y}")
+
+# Iterable
+for x in "Sanjay":
+    print(x)
+
+# while loop
+
+number = 100
+while number > 0:
+    print("Divided number : ", number)
+    number //= 2
