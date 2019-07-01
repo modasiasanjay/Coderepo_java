@@ -3,7 +3,7 @@ successful = False
 for number in range(3, 13, 3):
     print("Attemp", number, (number + 1) * ".")
 
-# for else loop
+# for else loop.
 for number in range(3):
     print("Attemp")
     if successful:
@@ -12,17 +12,17 @@ for number in range(3):
 else:
     print("Attempted 3 times and failed")
 
-# Multiple for loop
+# Multiple for loop -- sanjay
 
 for x in range(6):
     for y in range(5):
         print(f"x: {x}, y: {y}")
 
-# Iterable
+# Iterable - hii
 for x in "Sanjay":
     print(x)
 
-# while loop
+# while loop -- lolz
 
 number = 100
 while number > 0:
